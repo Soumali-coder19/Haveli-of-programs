@@ -3,7 +3,7 @@
 int main()
 {
 	int i,j,A[500][500],num,temp;
-	printf("\nEnter a number below 50(pawsitive) plixx : "); //thats all u guna do u madafaka user
+	printf("\nEnter a number below 50(pawsitive) plixx : "); 
 	scanf("%d",&num);
 	temp=2*num-1;
 	for(i=0;i<temp;i++)
@@ -31,7 +31,7 @@ int main()
 	{
 		for(j=0;j<temp;j++)
 		{
-			printf("%d\t",A[i][j]);  //2 digit dile value thik asche but disrupt hoye jachhe amar love life er moto
+			printf("%d\t",A[i][j]);  
 		}
 		printf("\n");        //
 	}
