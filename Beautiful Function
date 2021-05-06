@@ -1,0 +1,29 @@
+F(11)=12
+F(19)=2
+F(99)=1
+
+Let's define a number to be reachable from x, if we can apply beautiful function some number of times including 0 to x we get the number as result.
+
+Ex. 102 is reachable for the function F(F(10099))=102
+
+
+The function will return the number of numbers reachable from the input number.
+
+@soumalimukhopadhyay
+#py3
+
+n=input()
+count=0
+i=len(n)-1
+x=0
+while(i>0):
+    temp=0
+    #if int(n)%10!=0:@
+    temp=10-(int(n[i])+x)
+    count+=temp
+    x=1
+    i-=1
+    #else:
+        #n=n.strip('0')
+count+=9
+print(count)
